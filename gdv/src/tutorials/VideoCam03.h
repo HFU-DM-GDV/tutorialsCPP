@@ -5,22 +5,13 @@
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
+#include "util.h"
 
 using namespace cv;
 
 class VideoCam03 {
 private:
     const char* title = "Videocapture";
-
-    void copyToImgRegion(Mat& dest, Mat& src, int x, int y, int width, int height) const {
-        Rect insertRoi{x, y, width, height};
-
-        Mat resizedSrc = src.clone();
-        resize(resizedSrc, resizedSrc, Size(width, height));
-
-        Mat destRoi = dest(insertRoi);
-        resizedSrc.copyTo(destRoi);
-    }
 public:
     VideoCam03() = default;
 
@@ -58,22 +49,22 @@ public:
             resize(srcResized, srcResized, Size(insertRegionWidth, insertRegionHeight));
 
             // Original
-            copyToImgRegion(emptyImg, srcResized, 0, 0, insertRegionWidth, insertRegionHeight);
+            util::copyToImgRegion(emptyImg, srcResized, 0, 0, insertRegionWidth, insertRegionHeight);
 
             // Bottom left flip horizontally
             Mat blhFlip = srcResized.clone();
             flip(blhFlip, blhFlip, 0);
-            copyToImgRegion(emptyImg, blhFlip, insertRegionWidth, 0, insertRegionWidth, insertRegionHeight);
+            util::copyToImgRegion(emptyImg, blhFlip, insertRegionWidth, 0, insertRegionWidth, insertRegionHeight);
 
             // Bottom left flip horizontally & vertically
             Mat blhvFlip = srcResized.clone();
             flip(blhvFlip, blhvFlip, -1);
-            copyToImgRegion(emptyImg, blhvFlip, 0, insertRegionHeight, insertRegionWidth, insertRegionHeight);
+            util::copyToImgRegion(emptyImg, blhvFlip, 0, insertRegionHeight, insertRegionWidth, insertRegionHeight);
 
             // Top right flip vertically
             Mat trvFlip = srcResized.clone();
             flip(trvFlip, trvFlip, 1);
-            copyToImgRegion(emptyImg, trvFlip, insertRegionWidth, insertRegionHeight, insertRegionWidth, insertRegionHeight);
+            util::copyToImgRegion(emptyImg, trvFlip, insertRegionWidth, insertRegionHeight, insertRegionWidth, insertRegionHeight);
 
             // (In loop) display the image
             imshow(title, emptyImg);
