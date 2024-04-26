@@ -4,6 +4,7 @@
 #include "tutorials/VideoCam03.h"
 #include "tutorials/VideoFile04.h"
 #include "tutorials/WebcamDraw05.h"
+#include "tutorials/RgbToHsv06.h"
 
 int main() {
     // ImgManipulation01 imgManipulation01;
@@ -18,7 +19,10 @@ int main() {
     //VideoFile04 videoFile04;
     // videoFile04.run();
 
-    WebcamDraw05 webcamDraw05;
-    webcamDraw05.run();
+    // WebcamDraw05 webcamDraw05;
+    //webcamDraw05.run();
+
+    RgbToHsv06 rgbToHsv06;
+    rgbToHsv06.run();
     return 0;
 }
