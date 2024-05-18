@@ -1,7 +1,3 @@
-//
-// Created by Sebastian on 18.05.2024.
-//
-
 #ifndef GDV_CONNECTEDCOMPONENTS07_H
 #define GDV_CONNECTEDCOMPONENTS07_H
 

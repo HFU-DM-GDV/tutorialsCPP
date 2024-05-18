@@ -6,6 +6,7 @@
 #include "tutorials/WebcamDraw05.h"
 #include "tutorials/RgbToHsv06.h"
 #include "tutorials/ConnectedComponents07.h"
+#include "tutorials/TemplateMatching08.h"
 
 int main() {
     // ImgManipulation01 imgManipulation01;
@@ -26,7 +27,10 @@ int main() {
     // RgbToHsv06 rgbToHsv06;
     // rgbToHsv06.run();
 
-    ConnectedComponents07 connectedComponents07;
-    connectedComponents07.run();
+    // ConnectedComponents07 connectedComponents07;
+    // connectedComponents07.run();
+
+    TemplateMatching08 templateMatching08;
+    templateMatching08.run();
     return 0;
 }

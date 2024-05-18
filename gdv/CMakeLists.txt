@@ -14,5 +14,6 @@ add_executable(gdv src/main.cpp
         src/util.h
         src/tutorials/WebcamDraw05.h
         src/tutorials/RgbToHsv06.h
-        src/tutorials/ConnectedComponents07.h)
+        src/tutorials/ConnectedComponents07.h
+        src/tutorials/TemplateMatching08.h)
 target_link_libraries(gdv ${OpenCV_LIBS})
