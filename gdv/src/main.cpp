@@ -5,6 +5,7 @@
 #include "tutorials/VideoFile04.h"
 #include "tutorials/WebcamDraw05.h"
 #include "tutorials/RgbToHsv06.h"
+#include "tutorials/ConnectedComponents07.h"
 
 int main() {
     // ImgManipulation01 imgManipulation01;
@@ -22,7 +23,10 @@ int main() {
     // WebcamDraw05 webcamDraw05;
     //webcamDraw05.run();
 
-    RgbToHsv06 rgbToHsv06;
-    rgbToHsv06.run();
+    // RgbToHsv06 rgbToHsv06;
+    // rgbToHsv06.run();
+
+    ConnectedComponents07 connectedComponents07;
+    connectedComponents07.run();
     return 0;
 }
