@@ -8,6 +8,7 @@
 #include "tutorials/ConnectedComponents07.h"
 #include "tutorials/TemplateMatching08.h"
 #include "tutorials/Blur09.h"
+#include "tutorials/FourierTransform10.h"
 
 int main() {
     // ImgManipulation01 imgManipulation01;
@@ -34,7 +35,10 @@ int main() {
     // TemplateMatching08 templateMatching08;
     // templateMatching08.run();
 
-    Blur09 blur09;
-    blur09.run();
+    // Blur09 blur09;
+    //blur09.run();
+
+    FourierTransform10 fourierTransform10;
+    fourierTransform10.run();
     return 0;
 }
