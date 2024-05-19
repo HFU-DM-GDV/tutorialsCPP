@@ -7,6 +7,7 @@
 #include "tutorials/RgbToHsv06.h"
 #include "tutorials/ConnectedComponents07.h"
 #include "tutorials/TemplateMatching08.h"
+#include "tutorials/Blur09.h"
 
 int main() {
     // ImgManipulation01 imgManipulation01;
@@ -30,7 +31,10 @@ int main() {
     // ConnectedComponents07 connectedComponents07;
     // connectedComponents07.run();
 
-    TemplateMatching08 templateMatching08;
-    templateMatching08.run();
+    // TemplateMatching08 templateMatching08;
+    // templateMatching08.run();
+
+    Blur09 blur09;
+    blur09.run();
     return 0;
 }
