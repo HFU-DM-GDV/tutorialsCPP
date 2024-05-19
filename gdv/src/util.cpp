@@ -10,4 +10,13 @@ namespace util {
         cv::Mat destRoi = dest(insertRoi);
         resizedSrc.copyTo(destRoi);
     }
+
+    cv::Mat generateTransformationMatrix(const std::vector<float> &values) {
+        assert(values.size() == 6 && "Exactly 6 values have to be provided");
+
+        cv::Mat transformMat = cv::Mat::zeros(2, 3, CV_32F);
+        std::memcpy(transformMat.data, values.data(), 6 * sizeof(float));
+
+        return transformMat;
+    }
 }
