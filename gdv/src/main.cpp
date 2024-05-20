@@ -11,6 +11,7 @@
 #include "tutorials/FourierTransform10.h"
 #include "tutorials/Transformations11.h"
 #include "tutorials/AffineTransformation12.h"
+#include "tutorials/ProjTransformation13.h"
 
 int main() {
     // ImgManipulation01 imgManipulation01;
@@ -46,8 +47,11 @@ int main() {
     // Transformations11 transformations11;
     // transformations11.run();
 
-    AffineTransformation12 affineTransformation12;
-    affineTransformation12.run();
+    // AffineTransformation12 affineTransformation12;
+    // affineTransformation12.run();
+
+    ProjTransformation13 projTransformation13;
+    projTransformation13.run();
 
     return 0;
 }
