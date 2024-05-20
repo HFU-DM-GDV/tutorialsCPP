@@ -10,6 +10,7 @@
 #include "tutorials/Blur09.h"
 #include "tutorials/FourierTransform10.h"
 #include "tutorials/Transformations11.h"
+#include "tutorials/AffineTransformation12.h"
 
 int main() {
     // ImgManipulation01 imgManipulation01;
@@ -42,8 +43,11 @@ int main() {
     // FourierTransform10 fourierTransform10;
     // fourierTransform10.run();
 
-    Transformations11 transformations11;
-    transformations11.run();
+    // Transformations11 transformations11;
+    // transformations11.run();
+
+    AffineTransformation12 affineTransformation12;
+    affineTransformation12.run();
 
     return 0;
 }

@@ -18,5 +18,6 @@ add_executable(gdv src/main.cpp
         src/tutorials/TemplateMatching08.h
         src/tutorials/Blur09.h
         src/tutorials/FourierTransform10.h
-        src/tutorials/Transformations11.h)
+        src/tutorials/Transformations11.h
+        src/tutorials/AffineTransformation12.h)
 target_link_libraries(gdv ${OpenCV_LIBS})
