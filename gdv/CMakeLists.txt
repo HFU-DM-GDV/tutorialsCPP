@@ -20,5 +20,6 @@ add_executable(gdv src/main.cpp
         src/tutorials/FourierTransform10.h
         src/tutorials/Transformations11.h
         src/tutorials/AffineTransformation12.h
-        src/tutorials/ProjTransformation13.h)
+        src/tutorials/ProjTransformation13.h
+        src/tutorials/EdgeDetection14.h)
 target_link_libraries(gdv ${OpenCV_LIBS})
