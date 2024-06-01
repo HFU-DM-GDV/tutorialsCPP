@@ -9,7 +9,7 @@ using namespace cv;
 
 class EdgeDetection14 {
 private:
-    const char* m_imgPath = "../data/images/window01.jpg";
+    const char* m_imgPath = "../data/images/window01.JPG";
     const char* m_windowName = "Canny edge detection";
 
     // Slider names
