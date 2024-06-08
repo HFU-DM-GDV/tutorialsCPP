@@ -19,4 +19,18 @@ namespace util {
 
         return transformMat;
     }
+
+    std::vector<int> randomInRange(int from, int to, int amount) {
+        std::random_device rd;
+        std::mt19937 gen{rd()};
+        std::uniform_int_distribution<> distr(from, to);
+
+        std::vector<int> randNums;
+
+        for (size_t i = 0; i < amount; i++) {
+            randNums.push_back(distr(gen));
+        }
+
+        return std::move(randNums);
+    }
 }

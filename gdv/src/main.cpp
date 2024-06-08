@@ -13,6 +13,7 @@
 #include "tutorials/AffineTransformation12.h"
 #include "tutorials/ProjTransformation13.h"
 #include "tutorials/EdgeDetection14.h"
+#include "tutorials/FeatDetection15.h"
 
 int main() {
     // ImgManipulation01 imgManipulation01;
@@ -54,7 +55,10 @@ int main() {
     // ProjTransformation13 projTransformation13;
     // projTransformation13.run();
 
-    EdgeDetection14 edgeDetection14;
-    edgeDetection14.run();
+    // EdgeDetection14 edgeDetection14;
+    // edgeDetection14.run();
+
+    FeatDetection15 featDetection15;
+    featDetection15.run();
     return 0;
 }
